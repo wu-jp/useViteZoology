@@ -11,6 +11,7 @@
   "dependencies": {
     "@vueuse/core": "^8.5.0",
     "axios": "^0.27.2",
+    "dayjs": "^1.11.2",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.14",
     "vue": "^3.2.35",
@@ -18,18 +19,30 @@
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
+    "@vicons/ionicons5": "^0.12.0",
     "@vitejs/plugin-vue": "^2.3.3",
     "cross-env": "^7.0.3",
     "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^9.0.1",
     "https-localhost": "^4.7.1",
     "naive-ui": "^2.29.0",
+    "postcss": "^8.4.14",
+    "postcss-scss": "^4.0.4",
+    "prettier": "^2.6.2",
+    "sass": "^1.52.1",
+    "stylelint": "^14.8.5",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.2.0",
     "typescript": "^4.6.4",
     "unplugin-vue-components": "^0.19.6",
     "vfonts": "^0.0.3",
     "vite": "^2.9.9",
-    "vue-tsc": "^0.34.15",
-    "xicons": "^1.0.0"
+    "vue-tsc": "^0.34.15"
   }
 }

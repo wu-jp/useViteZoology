@@ -1,33 +1,50 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue';
-
 import { useUserStore } from '@/store/user';
-const userStore = useUserStore();
 
+import NavBar from '@/components/NavBar.vue'
+import Home from '@/components/Home.vue'
+import About from '@/components/About.vue'
+import Project from '@/components/Project.vue'
+import Contact from '@/components/Contact.vue'
+
+
+// test pinia
+const userStore = useUserStore();
 setTimeout(() => {
   userStore.updateName('wuyioo');
 }, 3000);
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <div>{{ userStore.name }}</div>
-  <router-link to="/">index</router-link>
-  <router-link to="/login">login</router-link>
-  <RouterView />
+  <!-- <div>{{ userStore.name }}</div> -->
+  <header>
+    <nav-bar></nav-bar>
+  </header>
+
+  <main>
+    <home></home>
+    <about></about>
+    <project></project>
+    <contact></contact>
+  </main>
+  <footer>
+    <p style="text-align: center; padding: 20px;">footer</p>
+  </footer>
 </template>
 
 <style>
+@import '@/styles/index.scss';
+
+body {
+  padding: 0;
+  marign: 0;
+}
+
 #app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
-  font-family: FiraCode, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: FiraCode, Avenir, Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

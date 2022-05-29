@@ -18,4 +18,18 @@ export default defineConfig({
       resolvers: [NaiveUiResolver()],
     }),
   ],
+  server: {
+    port: 8080, //启动端口
+    hmr: {
+      host: '127.0.0.1',
+      port: 8080
+    },
+    proxy: {
+      '/api': {
+        target: 'my https address',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, '')
+      }
+    }
+  }
 });
