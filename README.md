@@ -1,3 +1,3 @@
-# vitejs-vite-kkxuy5
+# useViteZoology
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-kkxuy5)
+> vue3 + ts
