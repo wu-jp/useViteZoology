@@ -6,6 +6,7 @@ import Home from '@/components/Home.vue'
 import About from '@/components/About.vue'
 import Project from '@/components/Project.vue'
 import Contact from '@/components/Contact.vue'
+import Footer from '@/components/Footer.vue'
 
 
 // test pinia
@@ -27,9 +28,7 @@ setTimeout(() => {
     <project></project>
     <contact></contact>
   </main>
-  <footer>
-    <p style="text-align: center; padding: 20px;">footer</p>
-  </footer>
+  <Footer> </Footer>
 </template>
 
 <style>
@@ -37,7 +36,7 @@ setTimeout(() => {
 
 body {
   padding: 0;
-  marign: 0;
+  margin: 0;
 }
 
 #app {

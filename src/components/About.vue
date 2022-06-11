@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="steps-item">
-        <n-button color="#c9184a" text-color="#fff"> 2022 </n-button>
+        <n-button color="#c9184a" text-color="#fff"> 2020 </n-button>
         <div class="right steps-info">
           <p>国庆节</p>
           <p>第一次来到厦门，入职目前这家公司</p>

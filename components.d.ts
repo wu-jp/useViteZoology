@@ -8,6 +8,7 @@ declare module '@vue/runtime-core' {
     About: typeof import('./src/components/About.vue')['default']
     Contact: typeof import('./src/components/Contact.vue')['default']
     Contcat: typeof import('./src/components/Contcat.vue')['default']
+    Footer: typeof import('./src/components/Footer.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Home: typeof import('./src/components/Home.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
